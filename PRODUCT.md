@@ -8,7 +8,7 @@ web
 
 ## Stack
 
-Vite + TypeScript + GSAP + Tailwind CSS（使用者指定）。靜態輸出，部署在 GitHub Pages：`https://sololiang923.github.io/liang/`（base path `/liang/`）。舊版 Vue 3 + Vite 2 專案已另外完整備份。
+Vite + TypeScript + GSAP + Tailwind CSS（使用者指定）。靜態輸出，部署在各帳號的 GitHub Pages：`https://<帳號>.github.io/liang/`（base path `/liang/`）。舊版 Vue 3 + Vite 2 專案已另外完整備份。
 
 ## Users
 
@@ -29,8 +29,9 @@ Vite + TypeScript + GSAP + Tailwind CSS（使用者指定）。靜態輸出，�
 
 - 客戶通常在桌機或手機上打開連結，邊看邊比較其他接案者。
 - 作品以「真實網址 + 截圖」呈現；部分原網站已下架，改用 GitHub Pages 備份版 demo：
-  - 食農知味 → `https://sololiang923.github.io/farmerstation/`
-  - 香奈兒腕錶形象頁 → `https://sololiang923.github.io/iWatcHome/`
+  - 食農知味 → `https://<帳號>.github.io/farmerstation/`
+  - 香奈兒腕錶形象頁 → `https://<帳號>.github.io/iWatcHome/`
+  - 帳號在建置時從 `VITE_SITE_URL` 取出，各帳號的網站連到自己的 Demo。
 - 報價不公開：依專案需求、功能複雜度、設計細節、時程與技術深度客製化評估。
 
 ## Capabilities and Constraints
@@ -41,7 +42,7 @@ Vite + TypeScript + GSAP + Tailwind CSS（使用者指定）。靜態輸出，�
 - 功能開發：串接後端 API、前端驗證（表單、欄位）、簡易視差滾動／動畫效果
 - 其他服務：搜尋引擎優化 (SEO) 策略與實作、無障礙網頁規範、Google Analytics / GTM 整合
 
-**技能（來自 Notion）**：HTML5、Pug、CSS3、SCSS、RWD、BEM、JavaScript、TypeScript、Vue、Nuxt、Vite、Tailwind CSS、Bootstrap 4、a11y
+**技能（來自 Notion）**：HTML5、Pug、CSS3、SCSS、RWD、JavaScript、TypeScript、Vue、Nuxt、Vite、Tailwind CSS、Bootstrap、a11y（頁面上不另列「方法」）
 **工具**：Git、GitHub、GitLab、Bitbucket
 
 **限制**
@@ -54,17 +55,17 @@ Vite + TypeScript + GSAP + Tailwind CSS（使用者指定）。靜態輸出，�
 
 - 名稱：阿良 / One Liang / Liang。
 - 自我介紹語氣：直白、務實、第一人稱「我」，繁體中文。
-- 頭像：手繪插畫風格的自畫像（灰髮、圓眼鏡、拿書的烏龜、魔杖），來源 Notion，存於 `src/assets/images/avatar.png`。
-- 聯絡 Email：`sololiang923@gmail.com`（使用者確認公開）。
+- 頭像：手繪插畫風格的自畫像（灰髮、圓眼鏡、拿書的烏龜、魔杖），來源 Notion，存於 `public/images/avatar-240.webp`／`avatar-480.webp`（2026-10-15 改版時做成去背圖，日夜兩種底色都能用）。
+- 聯絡 Email：依部署的 repo 而不同，建置時由環境變數 `VITE_CONTACT_EMAIL` 注入（GitHub Actions 變數 `CONTACT_EMAIL`，預設值見 `.env`）。原始碼不寫死任何個人信箱。
 
 ## Evidence on Hand
 
-真實作品 8 件，截圖來自 Notion 封面（`src/assets/images/works/`）：
+真實作品 8 件，截圖來自 Notion 封面（`public/images/works/`，720／1440 兩種寬度）：
 
 | 作品 | 類型 | 網址 | 技術 |
 |---|---|---|---|
-| 香奈兒腕錶形象頁 | 一頁式 | sololiang923.github.io/iWatcHome/ | HTML5、Pug、SCSS、Tailwind CSS、AOS、JavaScript |
-| 食農知味 | 形象網站 | sololiang923.github.io/farmerstation/ | HTML5、Pug、SCSS、Tailwind CSS、JavaScript |
+| 香奈兒腕錶形象頁 | 一頁式 | <帳號>.github.io/iWatcHome/ | HTML5、Pug、SCSS、Tailwind CSS、AOS、JavaScript |
+| 食農知味 | 形象網站 | <帳號>.github.io/farmerstation/ | HTML5、Pug、SCSS、Tailwind CSS、JavaScript |
 | Mook | 一頁式 | www.mook.com.tw | HTML5、Pug、SCSS、Tailwind CSS、AOS、JavaScript |
 | 景點+ | 部落格 | www.mook.com.tw/travelplus | HTML5、Pug、SCSS、Tailwind CSS、JavaScript |
 | 全國電子 | 電商網站 | ec.elifemall.com.tw | SCSS、Tailwind CSS、JavaScript、Vue、Nuxt |
